@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-// AULA 6 - Estruturas de Repetição
+// AULA 1 e 2- Algoritmos e Introdução à Linguagem de Programação
 /*Exercícios
 - Faça um programa em C para somar 3 números,
 multiplicar a soma pelo segundo e depois dividir o
