@@ -40,11 +40,12 @@ int main ()
 
     else
     {
-        n *= -1;
+        n *= -1.0;
         for (int i = 1; i < n; i++)
     {
-        m = 1/m * 1/og_m;
+        m *= og_m;
     }
+    m = 1/m;
     }
 
     printf("%.6f", m);
