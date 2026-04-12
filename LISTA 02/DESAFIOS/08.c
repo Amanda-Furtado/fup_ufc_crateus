@@ -5,27 +5,24 @@ Em outro dia, Alex estava estudando outro assunto tbm relacionado aos numeros na
 deparou com a seguinte definicao: um numero n e triangular, se n e formado pelo produto de tres
 numeros consecutivos. Por exemplo, 120 = 4 · 5 · 6 e um numero triangular. Ele pretender saber, se
 um dado numero n e triangular. Ele precisa de sua ajuda novamente.
+Desafio: Modifique o programa para que receba um inteiro positivo k e imprima os k primeiros
+numeros triangulares.
 */
+
 
 
 int main()
 {
-    int k, n = 1, c = 0;
+    int k;
     
     scanf("%i", &k);
     
-    
-    while(c <= k){
-        for(int x = 1; x <= n; x ++){
-            int y = x++;
-            int z = y++;
+    for(int x = 1; x <= k; x++){
+            int y = x + 1;
+            int z = y + 1;
             
-            if(x * y * z == n){
-                c++;
-                printf("%i", n);
-            }
-            n++;
-        }
+            printf("%i\n", x * y * z);
     }
+    
     return 0;
 }
