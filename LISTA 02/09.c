@@ -5,6 +5,31 @@ Afonso tem um grande entusiasmo pela Matematica. Certo dia, ele estava estudando
 naturais e percebeu que um numero da forma n^3 pode ser definido pela soma de n ımpares consecu-
 tivos. Por exemplo, 2^3 = 8 = 3 + 5. Dado um inteiro n, ele deseja saber quais seriam os n ımpares
 correspondentes tais que a soma deles seja igual a n3. Ele nao sabe programar e precisa de sua ajuda.
+
+VICTOR:
+int main()
+{
+	int n,z,aux;
+	scanf("%i",&n);
+	z = (n*n*n)/n;
+	aux = 1-n;
+	for(int i=1; i<=n; i++)
+	{
+		if(i!=n)
+		{
+            printf("%i + ",z+aux);
+            aux+=2;
+		}
+		else
+		{
+		    printf("%i = %i",z+aux,n*n*n);
+		}
+	}
+
+	return 0;
+}
+
+
 */
 
 
